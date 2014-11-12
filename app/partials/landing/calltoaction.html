@@ -1,0 +1,14 @@
+<section id="cta-section" class="section cta-section text-center home-cta-section">
+    <div class="container">
+       <h2 class="title">Ready to create gamified quizes?</h2>
+       <p class="intro">More than <span class="counting">300</span> teachers/students are using TestLegends right now</p>
+
+       <div class="col-md-6 col-md-offset-3" ng-show="!ShowBox">
+         <input type="email" class="form-control" placeholder="Enter your email address" style="width:360px;height:47px;float:left;margin-right:10px;" ng-model="subscriber_email"/>
+         <a class="btn btn-cta btn-cta-primary" href="" target="_blank" ng-click="ToggleBox()" style="float:left;">Get it Now</a>
+       </div>
+
+       <p ng-show="ShowBox" ng-click="ToggleBox()"><a class="btn btn-cta btn-cta-primary" target="_blank">Get Early Access Now</a></p>
+
+    </div><!--//container-->
+</section>
