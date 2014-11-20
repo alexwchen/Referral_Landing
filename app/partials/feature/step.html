@@ -2,15 +2,20 @@
     <div class="container" style="background-color:white; border-radius:10px; position: relative;z-index: 10; padding:30px; max-width:900px; border:1px solid black">
 
         <p class="text-center" style="color:gray; font-size:20px;">You are #{{wait_order}} on our waiting list.</p>
-        <h1 class="title text-center" style='margin-top:30px;margin-bottom:30px;'>Want to cut in line and get TestLegends free for 12 month?</h1>
+        <!-- <h1 class="title text-center" style='margin-top:30px;margin-bottom:30px;'>Want to cut in line and get TestLegends free for 12 month?</h1> -->
+        <h1 class="title text-center" style='margin-top:30px;margin-bottom:30px;'>You are {{5 - num_refers_made}} friends away from a free sticker!</h1>
         <p class="text-center" style="color:gray; font-size:20px;">Get five of your friends to sign up with this unique URL:</p>
         <h2 class="text-center" style='margin-top:30px;margin-bottom:30px;'>http://testlegends.com/#/invite/{{referralid}}</h2>
-
-        <div style="text-align:center;">
-          <button class="facebook-btn btn-lg" type="button" style="background: #3b5998;color:white; border:0px;"><i class="fa fa-facebook" style="margin-right:20px;"></i>Share On</button>
-          <button class="twitter-btn btn-lg" type="button" style="background: #55acee;color:white; border:0px;"><i class="fa fa-twitter" style="margin-right:15px;"></i>Tweet On</button>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{num_refers_made*20}}" aria-valuemin="0" aria-valuemax="100" style="width: {{num_refers_made*20}}%"></div>
         </div>
 
-    </div><!--//container-->
+        <div style="text-align:center;">
+          <button class="facebook-btn btn-lg" type="button" style="background: #3b5998;color:white; border:0px;" ng-click="fbshare()">
+            <i class="fa fa-facebook" style="margin-right:20px;"></i>Share On
+          </button>
+          <button class="twitter-btn btn-lg" type="button" style="background: #55acee;color:white; border:0px;" ng-click="twtshare()"><i class="fa fa-twitter" style="margin-right:15px;"></i>Tweet On</button>
+        </div>
 
+    </div>
 </section>
