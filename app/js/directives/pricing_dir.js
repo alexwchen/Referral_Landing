@@ -4,6 +4,15 @@
 
   angular.module('startupBootstrap')
 
+  .directive('pricingNav', function(){
+    return {
+      restrict: 'E',
+      templateUrl: '/app/partials/pricing/nav.html',
+      replace: true
+    };
+  })
+
+
   .directive('pricingPriceboard', function(){
     return {
       restrict: 'E',
