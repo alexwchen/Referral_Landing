@@ -1,9 +1,9 @@
 (function(){
   'use strict';
 
-
   angular.module('startupBootstrap', ["ui.router", "firebase"])
   .config(function($stateProvider, $urlRouterProvider) {
+
   $stateProvider
     .state('home', {
         url: '/',
@@ -25,6 +25,9 @@
     .state('pricing', {
         url: '/pricing',
         templateUrl: '/app/partials/pricing/skeleton.html'
+    })
+    .state("otherwise", {
+      url : '/home'
     });
 
   })

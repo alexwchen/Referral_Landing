@@ -29,8 +29,9 @@
 </head>
 
 <body ng-app="startupBootstrap" class="home-page">
+  <ui-view></ui-view>
   <!--  Stripe Button -->
-  <!-- <form action="/charge" method="POST">
+  <!-- <form action="https://www.testlegends.com" method="POST">
     <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
@@ -40,7 +41,6 @@
         data-amount="2000">
     </script>
   </form> -->
-  <ui-view></ui-view>
 </body>
 
 <!-- App Related -->
@@ -71,6 +71,7 @@
 <script type="text/javascript" src="app/js/vendor_template/plugins/jquery-placeholder/jquery.placeholder.js"></script>
 <script type="text/javascript" src="app/js/vendor_template/plugins/FitVids/jquery.fitvids.js"></script>
 <script type="text/javascript" src="app/js/vendor_template/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript" src="app/js/vendor_template/main.js"></script>
 
 </html>
