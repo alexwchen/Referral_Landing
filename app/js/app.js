@@ -25,10 +25,9 @@
     .state('pricing', {
         url: '/pricing',
         templateUrl: '/app/partials/pricing/skeleton.html'
-    })
-    .state("otherwise", {
-      url : '/home'
     });
+
+    $urlRouterProvider.otherwise("/");
 
   })
 
